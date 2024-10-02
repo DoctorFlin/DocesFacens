@@ -19,6 +19,17 @@ body {
 
 .TextoEspecial {
     margin-right: auto;
+    align-items: center;
+    margin-right: 8px;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.TextoEspecial img {
+    
+    width: 130px;
+    height: auto;
+    margin-bottom: 0px;
 }
 
 .donuts {
@@ -26,6 +37,14 @@ body {
     flex-direction: column;
     align-items: center;
     margin-left: auto;
+    margin-left: 8px;
+    margin-bottom: 40px;
+}
+
+.donuts img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 5px;
 }
 
 .snack-images {
@@ -43,8 +62,8 @@ body {
 .snack-image {
     width: 180px;
     height: 180px;
-    margin: 0 10px;
-    border-radius: 15px;
+    margin: 10px;
+    border-radius: 10px;
     object-fit: contain;
     border: 2px solid #ffffff;
 }
