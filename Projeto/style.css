@@ -1,47 +1,50 @@
-/* Garantir o layout esperado */
-.text-donuts {
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Alinha os itens ao topo */
-    width: 100%;
-    flex-wrap: wrap; /* Garantir que o conteúdo se reorganize em telas menores */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.text {
-    flex: 1;
-    margin-right: 30px;
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.TextoEspecial {
+    margin-right: auto;
 }
 
 .donuts {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os donuts no meio */
-    justify-content: flex-start; /* Garantir que fiquem de cima para baixo */
-    margin-left: auto; /* Empurra a coluna dos donuts para a direita */
+    align-items: center;
+    margin-left: auto;
 }
 
-.donut {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+.snack-images {
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #ffffff; 
 }
 
-@media (max-width: 768px) {
-    .text-donuts {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .donuts {
-        flex-direction: row; /* No mobile, mudar os donuts para uma linha */
-    }
-
-    .snack-images {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .snack-image {
-        margin-bottom: 20px;
-    }
+.snack-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 10px;
+    border-radius: 15px;
+    object-fit: contain;
+    border: 2px solid #ffffff;
 }
