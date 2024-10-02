@@ -1,81 +1,29 @@
-
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #f9fafb;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-
+/* Garantir o layout esperado */
 .text-donuts {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    width: 100%;
+    flex-wrap: wrap; /* Garantir que o conteúdo se reorganize em telas menores */
 }
 
 .text {
-    margin-bottom: 20px;
-}
-
-.text h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.text p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.button img {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
+    flex: 1;
+    margin-right: 30px;
 }
 
 .donuts {
     display: flex;
-    justify-content: space-around;
-    width: 180px;
+    flex-direction: column;
+    align-items: center; /* Centraliza os donuts no meio */
+    justify-content: flex-start; /* Garantir que fiquem de cima para baixo */
+    margin-left: auto; /* Empurra a coluna dos donuts para a direita */
 }
 
 .donut {
-    width: 60px;
-    height: 60px;
-}
-
-.snack-images {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 600px;
-    margin-top: 30px;
-}
-
-.snack-image {
-    width: 140px;
-    height: 140px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin: 0 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -85,7 +33,7 @@ body {
     }
 
     .donuts {
-        justify-content: center;
+        flex-direction: row; /* No mobile, mudar os donuts para uma linha */
     }
 
     .snack-images {
