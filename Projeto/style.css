@@ -22,7 +22,15 @@ body {
     align-items: center;
     margin-right: 8px;
     background-color: #ffffff;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
+}
+
+.TextoEspecial p {
+    line-height: 0.1;
+}
+
+.TextoEspecial h1 {
+    font-size: 41px;
 }
 
 .TextoEspecial img {
@@ -38,7 +46,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-left: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .donuts img {
@@ -66,4 +74,16 @@ body {
     border-radius: 10px;
     object-fit: contain;
     border: 2px solid #ffffff;
+}
+
+.Botao {
+    margin-top: 20px;
+}
+
+.Botao a img {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-bottom: 200px;
 }
